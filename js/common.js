@@ -45,7 +45,7 @@ function hasScrolled() {
 
 
 	//кнопка sandwich
-$(".sandwich").click(function() {
+$(".sandwich_mobile").click(function() {
 	if ($(".menu-mobile").is(":hidden")) {
 		$(".menu-mobile").slideDown(200);
 		$(".menu-overlay").fadeIn(200);
