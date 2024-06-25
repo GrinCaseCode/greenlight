@@ -181,7 +181,7 @@
         width: 33px;
         height: 33px;
         bottom: 19px;
-        margin-left: -10px;
+        margin-left: -11px;
     }
     .line-form .btn-main {
         height: 40px;
@@ -397,7 +397,7 @@
     .advantage__descr {
         font-size: 14px;
         margin-bottom: 15px;
-        max-width: 300px;
+        max-width: 100%;
     }
     .item-step {
         font-size: 14px;
@@ -512,6 +512,13 @@
     }
     .contacts .item-dropdown__content p {
         margin-bottom: 10px;
+    }
+    .item-dropdown__content {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .item-dropdown__content li {
+        margin-bottom: 4px;
     }
     .tabs-main a::before, .tabs-main a::after {
         width: 33px;
