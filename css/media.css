@@ -538,9 +538,6 @@
     .contacts {
         padding: 40px 0;
     }
-    .tabs-main li:last-child a::after {
-        display: none;
-    }
     .tabs-main {
         max-width: 335px;
     }
@@ -715,8 +712,10 @@
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 400px) {
+    .tabs-main li:last-child a::after {
+        display: none;
+    }
 }
 
 
