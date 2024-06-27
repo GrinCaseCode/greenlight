@@ -140,6 +140,7 @@
     .row {
         margin: 0 -4px;
     }
+    .row > span,
     .row > div {
         padding: 0 4px;
     }
@@ -699,6 +700,108 @@
         position: fixed;
         z-index: -1;
     }
+
+
+    .item-cooperation {
+        padding: 10px;
+        font-size: 14px;
+        background: #fff;
+        border-radius: 16px;
+    }
+    .col-lg-6 .item-cooperation__image {
+        height: 225px;
+    }
+    .item-cooperation__image {
+        height: 150px;
+        border-radius: 16px;
+    }
+    .item-cooperation__image img {
+        border-radius: 16px;
+    }
+    .item-cooperation__title {
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+    .item-cooperation__descr {
+        font-size: 14px;
+        margin-bottom: 11px;
+    }
+    .item-cooperation__title, .item-cooperation__descr, .item-cooperation__text {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .item-cooperation__text {
+        margin-bottom: 13px;
+    }
+    .item-cooperation .col-lg-7 .item-cooperation__text {
+        max-width: 100%;
+    }
+    .item-cooperation__image::before {
+        width: 40px;
+        height: 40px;
+        border-radius: 14px;
+    }
+    .item-cooperation__image::after {
+        width: 24px;
+        height: 24px;
+        bottom: 8px;
+        right: 8px;
+    }
+    .countdown-row {
+        gap: 20px;
+    }
+    .countdown {
+        border-radius: 12px;
+        padding: 13px 18px;
+    }
+    .countdown-amount {
+        width: 70px;
+        height: 42px;
+        margin-bottom: 4px;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+    }
+    .countdown-period {
+        font-size: 12px;
+    }
+    .countdown-section::after {
+        margin-left: 0;
+        font-size: 33px;
+        line-height: 37px;
+    }
+    .advantage__bottom {
+        display: block;
+    }
+    .countdown-period {
+        font-size: 10px;
+    }
+    .advantage__bottom .btn-main {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .item-step__number {
+        width: 90px;
+        height: 85px;
+        font-size: 85px;
+    }
+    .map-contacts {
+        position: relative;
+    }
+    .wrap-map {
+        height: auto;
+        padding-top: 0;
+    }
+    .contacts__left {
+        border-radius: 16px;
+        height: auto;
+        max-height: initial;
+    }
+    .wrap-container-main {
+        border-radius: 0;
+    }
+    .advantage__descr strong {
+        font-size: 15px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -713,9 +816,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 400px) {
-    .tabs-main li:last-child a::after {
-        display: none;
-    }
+
 }
 
 

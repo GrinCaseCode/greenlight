@@ -163,6 +163,9 @@ $('.btn-tab').click(function() {
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
+	var austDay = new Date($(".countdown").attr("date-time"));
+	$(".countdown").countdown({until: austDay, format: 'dHM'});
+
 
 	 // стайлер для select
 	 $('select').styler();
