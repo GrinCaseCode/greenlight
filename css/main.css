@@ -1515,6 +1515,7 @@ form {
 	background-size: auto 100%;
 	background-position: right center;
 	z-index: initial;
+	transition: all 0.3s;
 }
 .item-step__number::before {
 	background-image: url(../img/step_number_active2.svg);
