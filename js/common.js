@@ -1,6 +1,33 @@
 $(document).ready(function() {
 
 
+    // Функция проверки заполненности всех полей
+    function checkFields() {
+        let allFilled = true;
+
+        $('.row_calculation input[required]').each(function() {
+            if ($(this).val() === '') {
+                allFilled = false;
+                return false; // Выход из цикла each
+            }
+        });
+
+        if (allFilled) {
+            $('.calculation__more').slideDown(200);
+        } else {
+            $('.calculation__more').slideUp(200);
+        }
+    }
+
+    // Проверка полей при изменении значений
+    $('input[required]').on('input', function() {
+        checkFields();
+    });
+
+    // Проверка полей при загрузке страницы
+    checkFields();
+
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -109,16 +136,24 @@ $(".navigation__haschild > a").click(function(e) {
 		nextArrow: '<div class="slick-next slick-arrow"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.16669 20C4.16669 12.5361 4.16669 8.80414 6.48542 6.4854C8.80416 4.16666 12.5361 4.16666 20 4.16666C27.4639 4.16666 31.1959 4.16666 33.5146 6.4854C35.8334 8.80414 35.8334 12.5361 35.8334 20C35.8334 27.4639 35.8334 31.1959 33.5146 33.5146C31.1959 35.8333 27.4639 35.8333 20 35.8333C12.5361 35.8333 8.80416 35.8333 6.48542 33.5146C4.16669 31.1959 4.16669 27.4639 4.16669 20Z" stroke="#02080A" stroke-width="1.5"/><path d="M16.6667 28.3333L22.7125 21.0412C23.1264 20.5419 23.3334 20.2923 23.3334 20C23.3334 19.7077 23.1264 19.4581 22.7125 18.9588L16.6667 11.6667" stroke="#02080A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div/>',
 	});
 
-	$('.slider').slick({
+	$('.slider-cases').slick({
 		arrows: true,
-		dots: true,
+		dots: false,
 		infinite: true,
 		touchThreshold: 1000,
-		slidesToShow: 1,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
-	});
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+			]
+		});
 
 	$(".item-dropdown__head").click(function() {
 		$(this).parent().toggleClass("active");
