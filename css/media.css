@@ -1112,6 +1112,65 @@
     .advantage__descr {
         margin-top: 15px;
     }
+    .billbord_shipping .billbord__image img {
+        width: 100%;
+    }
+    .billbord_shipping .billbord__image {
+        margin-bottom: -40px;
+    }
+    .additional-services .item-cooperation .col-lg-7 {
+        padding: 10px 4px;
+    }
+    .additional-services .item-cooperation_shipping .item-cooperation__title {
+        max-width: 100%;
+    }
+    .additional-services {
+        padding-bottom: 50px;
+    }
+    .additional-services ~ .cases_page {
+        margin-bottom: 10px;
+    }
+    .item-case__title {
+        padding-right: 30px;
+    }
+    .article-content {
+        font-size: 14px;
+    }
+    .article-content h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .breadcrumbs {
+        padding: 12px 0;
+        font-size: 13px;
+        display: block;
+    }
+    .breadcrumbs li {
+        display: inline;
+    }
+    .breadcrumbs li::after {
+        margin: 0 10px;
+    }
+    .article-content > img {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        float: none;
+    }
+    .article-date {
+        margin-bottom: 15px;
+    }
+    .article-content p {
+        margin-bottom: 12px;
+    }
+    .article-content h2 {
+        margin-bottom: 20px;
+        margin-top: 25px;
+        font-size: 19px;
+    }
+    .page-article {
+        padding-bottom: 35px;
+    }
 }
 
 /* Small Devices, Tablets */

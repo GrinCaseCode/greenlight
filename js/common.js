@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('.row_calculation input[required]').each(function() {
             if ($(this).val() === '') {
                 allFilled = false;
-                return false; // Выход из цикла each
+                return false;
             }
         });
 
@@ -155,6 +155,80 @@ $(".navigation__haschild > a").click(function(e) {
 			]
 		});
 
+		$('.slider-image').slick({
+			arrows: true,
+			dots: false,
+			infinite: true,
+			touchThreshold: 1000,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		});
+
+		$('.slider-team').slick({
+			arrows: true,
+			dots: false,
+			infinite: true,
+			touchThreshold: 1000,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 1,
+					}
+				}
+				]
+			});
+
+
+			$('.slider-years').slick({
+				arrows: false,
+				dots: false,
+				infinite: true,
+				focusOnSelect: true,
+				touchThreshold: 1000,
+				asNavFor: ".slider-history",
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+				nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+				responsive: [
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 1,
+						}
+					}
+					]
+				});
+
+				$('.slider-history').slick({
+					arrows: false,
+					dots: false,
+					infinite: true,
+					focusOnSelect: true,
+					asNavFor: ".slider-years",
+					touchThreshold: 1000,
+					fade: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+					nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+					responsive: [
+						{
+							breakpoint: 992,
+							settings: {
+								slidesToShow: 1,
+							}
+						}
+						]
+					});
+	
 	$(".item-dropdown__head").click(function() {
 		$(this).parent().toggleClass("active");
 		$(this).siblings().slideToggle(200);
