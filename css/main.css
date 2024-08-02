@@ -491,6 +491,7 @@ form {
 	display: block;
 	background-color: #fff;
 	border-radius: 50%;
+	z-index: 5;
 	position: relative;
 }
 .video-main::before {
