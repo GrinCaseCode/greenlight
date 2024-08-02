@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.4" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
+</head>
+<body>
+
+	<div class="wrapper"> 
+
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<span class='sandwich sandwich_menu'>
+						<span class='sw-topper'></span>
+						<span class='sw-bottom'></span>
+						<span class='sw-footer'></span>
+					</span>
+					<span class='sandwich sandwich_mobile'>
+						<span class='sw-topper'></span>
+						<span class='sw-bottom'></span>
+						<span class='sw-footer'></span>
+					</span>
+					<div class="logo-wrap">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="logo-descr">Транспортно-экспедиторские услуги по РФ и миру</div>
+					</div>
+					<div class="location-main">
+						<div class="location-main__value"><img src="img/location.svg" alt="alt">Красноярск</div>
+					</div>
+					<a href="#" class="btn-calculator"><img src="img/calculator.svg" alt="alt">Расчет заказа</a>
+					<div class="language">
+						<a href="#" class="language__item active">RU</a>
+						<a href="#" class="language__item">EN</a>
+					</div>
+					<div class="header-search">
+						<form>
+							<input type="text" placeholder="Поиск" required="required">
+							<button class="btn-search"><i class="fas fa-search"></i></button>
+						</form>
+						<div class="open-search"><i class="fas fa-search"></i></div>
+					</div>
+					<ul class="socials-list">
+						<li><a href="#" target="_blank"><img src="img/soc1.svg" alt="alt"></a></li>
+						<li><a href="#" target="_blank"><img src="img/soc2.svg" alt="alt"></a></li>
+					</ul>
+					<a href="tel:+73912238585" class="phone-main"><i class="fas fa-phone-alt"></i> +7 (391) 223-85-85</a>
+				</div>
+				<ul class="menu">
+					<li class="menu__haschild">
+						<a href="#">Контейнерные перевозки по РФ</a>
+						<ul>
+							<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+							<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+							<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+							<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+						</ul>
+					</li>
+					<li class="menu__haschild">
+						<a href="#">Международные контейнерные перевозки</a>
+						<ul>
+							<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+							<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+							<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+							<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+						</ul>
+					</li>
+					<li class="menu__haschild">
+						<a href="#">Фасовка наливных и насыпных грузов</a>
+						<ul>
+							<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+							<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+							<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+							<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+						</ul>
+					</li>
+					<li class="menu__haschild">
+						<a href="#">Услуги контейнерного терминала</a>
+						<ul>
+							<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+							<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+							<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+							<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+						</ul>
+					</li>
+					<li class="menu__haschild">
+						<a href="#">Сопутствующие услуги</a>
+						<ul>
+							<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+							<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+							<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+							<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Наши кейсы</a></li>
+				</ul>
+			</div>
+			<div class="menu-mobile">
+				<div class="header-search">
+					<form>
+						<input type="text" placeholder="Поиск" required="required">
+						<button class="btn-search"><i class="fas fa-search"></i></button>
+					</form>
+					<div class="open-search"><i class="fas fa-search"></i></div>
+				</div>
+				<ul class="navigation">
+					<li class="navigation__haschild">
+						<a href="#">Каталог</a>
+						<ul>
+							<li class="navigation__haschild">
+								<a href="#">Контейнерные перевозки по РФ</a>
+								<ul>
+									<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+									<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+									<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+									<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+								</ul>
+							</li>
+							<li class="navigation__haschild">
+								<a href="#">Международные контейнерные перевозки</a>
+								<ul>
+									<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+									<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+									<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+									<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+								</ul>
+							</li>
+							<li class="navigation__haschild">
+								<a href="#">Фасовка наливных и насыпных грузов</a>
+								<ul>
+									<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+									<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+									<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+									<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+								</ul>
+							</li>
+							<li class="navigation__haschild">
+								<a href="#">Услуги контейнерного терминала</a>
+								<ul>
+									<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+									<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+									<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+									<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+								</ul>
+							</li>
+							<li class="navigation__haschild">
+								<a href="#">Сопутствующие услуги</a>
+								<ul>
+									<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+									<li><a href="#">Перевозка грузов по России в ускоренных контейнерных поездах</a></li>
+									<li><a href="#">Перевозка контейнеров по маршруту Москва-Красноярск</a></li>
+									<li><a href="#">Услуги автовывоза в городах РФ</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Наши кейсы</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Наши кейсы</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Сервисы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="menu-mobile__line">
+					<div class="location-main">
+						<div class="location-main__value"><img src="img/location.svg" alt="alt">Красноярск</div>
+					</div>
+					<a href="#" class="btn-calculator"><img src="img/calculator.svg" alt="alt">Расчет заказа</a>
+				</div>
+				<div class="menu-mobile__line">
+					<div class="language">
+						<a href="#" class="language__item active">RU</a>
+						<a href="#" class="language__item">EN</a>
+					</div>
+					<ul class="socials-list">
+						<li><a href="#" target="_blank"><img src="img/soc1.svg" alt="alt"></a></li>
+						<li><a href="#" target="_blank"><img src="img/soc2.svg" alt="alt"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-overlay"></div>
+		</header>
+
+		<section class="billbord billbord_shipping">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h1 class="title-big">Контейнерные перевозки по России</h1>
+						<div class="billbord__text">Метод транспортировки грузов, при котором товары помещаются в стандартные контейнер, а далее эти контейнеры могут быть легко перемещены между различными видами транспорта, такими как контейнеровозы, поезда и суда, без необходимости перегрузки самих товаров. </div>
+					</div>
+					<div class="col-lg-5">
+						<div class="billbord__image">
+							<img src="img/billbord_shipping.png" alt="alt">
+						</div>
+					</div>
+				</div>
+				<div class="calculation">
+					<div class="calculation__head">Рассчитать стоимость</div>
+					<div class="calculation__content">
+						<form>
+							<div class="calculation__main">
+								<div class="calculation__wrap">
+									<div class="row row_calculation">
+										<div class="col-lg-4">
+											<div class="item-form item-form_location">
+												<input type="text" placeholder="Город отправки" required="required">
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="item-form item-form_location">
+												<input type="text" placeholder="Город доставки" required="required">
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="item-form">
+														<input type="text" placeholder="Масса" required="required">
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="item-form">
+														<input type="text" placeholder="Вид груза" required="required">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="calculation__more">
+										<div class="row">
+											<div class="col-lg-4">
+												<div class="item-form">
+													<input type="text" placeholder="Имя" required="required">
+												</div>
+											</div>
+											<div class="col-lg-4">
+												<div class="item-form">
+													<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required="required">
+												</div>
+											</div>
+											<div class="col-lg-4">
+												<div class="item-form">
+													<input type="email" placeholder="E-mail" required="required">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculation__button">
+									<input type="submit" class="btn-main" value="Рассчитать стоимость перевозки">
+									<div class="calculation__more">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" required="required" checked="checked" />
+												<span>Согласие на обработку персональных данных</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="benefits">
+			<div class="container">
+				<div class="row row_main">
+					<div class="col-lg-3 col-6">
+						<div class="benefits__item">
+							<div class="benefits__icon">
+								<img src="img/ic_benefit1.svg" alt="alt">
+							</div>
+							<h4 class="benefits__title">Универсальность </h4>
+							<p>использование одного контейнера <br>для различных видов транспорта</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="benefits__item">
+							<div class="benefits__icon">
+								<img src="img/ic_benefit2.svg" alt="alt">
+							</div>
+							<h4 class="benefits__title">Безопасность</h4>
+							<p>минимизация риска повреждения <br>или кражи груза</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="benefits__item">
+							<div class="benefits__icon">
+								<img src="img/ic_benefit3.svg" alt="alt">
+							</div>
+							<h4 class="benefits__title">Экономичность</h4>
+							<p>снижение затрат на упаковку <br>и перегрузку товаров</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="benefits__item">
+							<div class="benefits__icon">
+								<img src="img/ic_benefit4.svg" alt="alt">
+							</div>
+							<h4 class="benefits__title">Скорость и эффективность</h4>
+							<p>упрощение и ускорение процесса погрузки и разгрузки</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-shipping">
+			<div class="container">
+				<div class="row row_main">
+					<div class="col-lg-6">
+						<a href="#" class="item-cooperation item-cooperation_shipping">
+							<span class="row">
+								<span class="col-lg-7">
+									<span class="item-cooperation__title">Железнодорожные контейнерные перевозки</span>
+									<span class="item-cooperation__text">Наиболее эффективный и надежный способ транспортировки грузов на большие расстояния</span>
+								</span>
+								<span class="col-lg-5">
+									<span class="item-cooperation__image">
+										<img src="img/shipping1_1.jpg" alt="alt">
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="#" class="item-cooperation item-cooperation_shipping">
+							<span class="row">
+								<span class="col-lg-7">
+									<span class="item-cooperation__title">Перевозка грузов в ускоренных контейнерных поездах</span>
+									<span class="item-cooperation__text">Практичный и быстрый способ доставки товаров на большие расстояния</span>
+								</span>
+								<span class="col-lg-5">
+									<span class="item-cooperation__image">
+										<img src="img/shipping1_2.jpg" alt="alt">
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="#" class="item-cooperation item-cooperation_shipping">
+							<span class="row">
+								<span class="col-lg-7">
+									<span class="item-cooperation__title">Перевозка контейнеров по маршруту Москва-Красноярск</span>
+									<span class="item-cooperation__text">Обеспечим  уникальные преимущества для перевозки груза по этому маршруту</span>
+								</span>
+								<span class="col-lg-5">
+									<span class="item-cooperation__image">
+										<img src="img/shipping1_3.jpg" alt="alt">
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="#" class="item-cooperation item-cooperation_shipping">
+							<span class="row">
+								<span class="col-lg-7">
+									<span class="item-cooperation__title">Услуги автовывоза контейнеров </span>
+									<span class="item-cooperation__text">Реализуем надежную и своевременную доставку вашего груза в разных городах</span>
+								</span>
+								<span class="col-lg-5">
+									<span class="item-cooperation__image">
+										<img src="img/shipping1_4.jpg" alt="alt">
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantage advantage_shipping">
+			<div class="container">
+				<div class="advantage__head">
+					<h2 class="title-section">Почему удобно возить «от двери до двери»?</h2>
+				</div>
+				<div class="advantage__block">
+					<div class="advantage__subtitle">Этот метод позволяет отправителю и получателю избежать сложностей, связанных с организацией промежуточных этапов транспортировки</div>
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="advantage__text">
+								<p>Всё, что требуется от заказчика: подписать договор и составить заявку! </p>
+								<p>Согласование перевозки на каждом этапе – это наша задача</p>
+							</div>
+							<div class="advantage__picture">
+								<img src="img/shipping_avd1.png" alt="alt">
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="advantage__form">
+								<div class="subtitle-middle">Узнать точную стоимость доставки груза</div>
+								<div class="advantage__descr">Заполните форму и наш специалист перезвонит вам в ближайшее время</div>
+								<form>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="item-form">
+												<input type="text" placeholder="Имя" required="required">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="item-form">
+												<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required="required">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" required="required" checked="checked" />
+													<span>Согласие на обработку персональных данных</span>
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<input type="submit" class="btn-main" value="Узнать стоимость">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="footer__logo">
+							<a href="#" class="logo">
+								<img src="img/logo.svg" alt="alt">
+							</a>
+							<div class="logo-descr">Транспортно-экспедиторские услуги по РФ и миру</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-7">
+						<ul class="footer__nav">
+							<li><a href="#">Мультимодальные контейнерные перевозки</a></li>
+							<li><a href="#">Услуги контейнерного депо</a></li>
+							<li><a href="#">Железнодорожные контейнерные перевозки</a></li>
+							<li><a href="#">Экспедирование грузов</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-5">
+						<ul class="footer__nav">
+							<li><a href="#">Наши кейсы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Сервисы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2">
+						<a href="tel:+73912238585" class="footer__phone">+7 (391) 223-85-85</a>
+						<ul class="socials-list">
+							<li><a href="#" target="_blank"><img src="img/soc1.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/soc2.svg" alt="alt"></a></li>
+						</ul>
+						<p><strong>Адрес:</strong> ул. Карла Маркса, 123, <br>2 этаж, офис 203</p>
+						<p><strong>E-mail:</strong> info@grlight.ru</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg">
+							<a href="#">Политика конфиденциальности </a>
+						</div>
+						<div class="col-lg-2">
+							<p>© Copyright  2024 г.</p>
+						</div>
+						<div class="col-lg">
+							<div class="create">Сделано в <a href="#"><img src="img/copy.svg" alt="alt"></a></div>
+						</div>
+						<div class="col-xl-5 col-lg">
+							<a href="#" class="btn_top"><i class="far fa-arrow-up"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/countdown/jquery.plugin.js"></script>
+	<script src="libs/countdown/jquery.countdown.min.js"></script>
+	<script src="libs/countdown/jquery.countdown-ru.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.7"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
