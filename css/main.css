@@ -2693,6 +2693,7 @@ form {
 	height: 16.67vw;
 	padding: 1.04vw;
 	font-size: 1.04vw;
+	min-height: 100%;
 	line-height: 160%;
 	font-weight: 600;
 	position: relative;
