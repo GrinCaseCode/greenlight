@@ -1229,6 +1229,7 @@
     .item-team {
         max-width: 150px;
         font-size: 13px;
+        margin: 0 auto;
     }
     .slider-team .slick-arrow {
         top: 56px;
