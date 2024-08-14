@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	$(".contact-dropdown__head").click(function() {
+		$(this).parent().toggleClass("active");
+		$(this).siblings().slideToggle(200);
+		$(this).parent().siblings(".contact-dropdown").removeClass("active");
+		$(this).parent().siblings(".contact-dropdown").find(".contact-dropdown__content").slideUp(200);
+	  });
 
     // Функция проверки заполненности всех полей
     function checkFields() {
@@ -179,7 +185,7 @@ $(".navigation__haschild > a").click(function(e) {
 				{
 					breakpoint: 992,
 					settings: {
-						slidesToShow: 1,
+						slidesToShow: 2,
 					}
 				}
 				]
@@ -201,7 +207,7 @@ $(".navigation__haschild > a").click(function(e) {
 					{
 						breakpoint: 992,
 						settings: {
-							slidesToShow: 1,
+							slidesToShow: 3,
 						}
 					}
 					]
