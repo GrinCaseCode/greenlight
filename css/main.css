@@ -21,7 +21,7 @@ body textarea:focus:required:invalid {
 } 
 body input:required:valid,
 body textarea:required:valid {
-	
+	 
 }
 body {
 	font-family: 'Inter', sans-serif;
@@ -2859,11 +2859,35 @@ form {
 .cases + .steps {
 	margin-top: 4.948vw;
 }
-.billbord_complex,
-.billbord_about {
-	padding-top: 4.583vw;
-}
+
 .billbord_complex .breadcrumbs,
 .billbord_about .breadcrumbs {
-	padding-bottom: 2.969vw;
+	top: -4.375vw;
+	padding-bottom: 0;
+	position: relative;
 } 
+.billbord_consumer .title-big {
+	max-width: 60.833vw;
+}
+.billbord_consumer .descr-big {
+	max-width: 34.844vw;
+}
+.production_consumer .title-section {
+	max-width: 45.938vw;
+}
+.regions_consumers .regions__map img {
+	width: 50.625vw;
+	margin-top: -10.833vw;
+	margin-bottom: -2.083vw;
+	margin-left: auto;
+}
+.regions_consumers {
+	padding-bottom: 0;
+}
+.billbord_cargo .title-big {
+	margin-bottom: 8.073vw;
+	max-width: 77.604vw;
+}
+.production_cargo .title-section {
+	max-width: 48.021vw;
+}

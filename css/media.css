@@ -19,7 +19,7 @@
     .header__top .socials-list,
     .header__top .header-search,
     .header__top .language,
-    .header__top .btn-calculator,
+    .header__top .btn-calculator, 
     .header__top .location-main,
     .menu { 
         display: none;
@@ -1421,7 +1421,7 @@
     }
     .item-favor {
         font-size: 14px;
-        padding: 0 15px;
+        padding: 0 15px !important;
         height: 155px;
         border-radius: 16px;
     }
@@ -1489,11 +1489,30 @@
     }
     .billbord_complex .breadcrumbs, 
     .billbord_about .breadcrumbs {
+        top: 0;
         padding-bottom: 30px;
     }
     .billbord_complex, 
     .billbord_about {
         padding-top: 0;
+    }
+    .billbord_consumer .title-big {
+        max-width: 448px;
+    }
+    .production_consumer ~ .advantage:not(.advantage_managers) {
+        padding-bottom: 10px;
+    }
+    .regions_consumers .regions__map img {
+        width: 100%;
+        margin: 0;
+        margin-top: 25px;
+    }
+    .advantage_managers .advantage__text {
+        padding-top: 0;
+    }
+    .billbord_cargo .title-big {
+        margin-bottom: 36px;
+        max-width: 100%;
     }
 }
 
